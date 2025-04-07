@@ -1,0 +1,1 @@
+Quản lý state (Redux, Zustand...)

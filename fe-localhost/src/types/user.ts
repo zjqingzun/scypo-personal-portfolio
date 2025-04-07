@@ -1,0 +1,1 @@
+// Định nghĩa kiểu dữ liệu User
