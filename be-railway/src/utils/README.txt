@@ -1,0 +1,1 @@
+Storing utility components like database connections, common services (e.g., email, Firebase notifications), etc.

@@ -1,0 +1,1 @@
+Example module (e.g., user)

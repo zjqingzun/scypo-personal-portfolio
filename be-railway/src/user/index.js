@@ -1,0 +1,1 @@
+// Registers the module (routes, controller, etc.)

@@ -1,0 +1,1 @@
+Storing various configuration files (e.g., database configuration, Firebase configuration, etc.):
