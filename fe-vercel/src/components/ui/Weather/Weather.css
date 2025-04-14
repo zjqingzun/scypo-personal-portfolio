@@ -1,0 +1,150 @@
+.weather-container {
+  background: linear-gradient(to bottom, #1a237e, #0d47a1);
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.weather-header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 20px;
+}
+
+.weather-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.location {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.weather-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.weather-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.temperature {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.weather-description {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.weather-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.info-item i {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.weather-loading {
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: white;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid white;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.weather-error {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 0, 0, 0.1);
+  border-radius: 10px;
+  color: white;
+}
+
+.weather-error i {
+  font-size: 2rem;
+  color: #ff5252;
+  margin-bottom: 15px;
+}
+
+.error-help {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .weather-container {
+    margin: 15px;
+    padding: 20px;
+  }
+  
+  .weather-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .temperature {
+    font-size: 3rem;
+  }
+  
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+} 
