@@ -1,0 +1,29 @@
+.attention-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.attention-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.75rem;
+}
+
+.attention-text {
+  font-size: 0.875rem;
+  color: #495057;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .attention-bar {
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .attention-text {
+    font-size: 0.75rem;
+  }
+} 
